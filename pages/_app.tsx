@@ -1,17 +1,17 @@
 import '../styles/globals.css';
+import 'antd/dist/antd.css';
 import type { AppProps } from 'next/app';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-
-const client = new ApolloClient({
-  uri: process.env.NEXT_PUBLIC_APOLLO_URI,
-  cache: new InMemoryCache()
-});
+import { ApolloProvider } from '@apollo/client';
+import apolloClient from '../lib/apollo';
+import { ContactProvider } from '../lib/context/useContext';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
-      <Component {...pageProps} />;
-    </ApolloProvider>
+    <ContactProvider>
+      <ApolloProvider client={apolloClient}>
+        <Component {...pageProps} />;
+      </ApolloProvider>
+    </ContactProvider>
   );
 }
 
