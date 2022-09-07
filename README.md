@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Before Installation
 
-## Getting Started
+Before your clones this project, please make sure you have completely install extension for **Allow CORS** endpoint API can make response and functionality..
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- :fa-book: Of course, you can **create a new phonebook **
+- ✨ You can see your phonebook list
+- 📘 You can make favorit a contact
+- 📘 You can edit name contact and deleted
+- 😗 etc~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Powered By
+- [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to initialize the project with Javascript and TypeScript💎.
+- [React Context](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context/) to manage the app state.
+- [Localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to manage data favorite phonebook.
+- [Ant.Design ⚡](https://ant.design/) + [Emotion](https://emotion.sh/docs/media-queries) to build the user interface.
+- [Graphql](https://github.com/apollographql/apollo-client) to make a respone from endpoint API.
+- [Jest](https://jestjs.io/) & [react testing-library](https://testing-library.com/) to test the UI and implementation. 🧪
+- Hosted on [Vercel 🚀](https://vercel.com/).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `NEXT_PUBLIC_APOLLO_URI` contains from endpoint GraphQl API
+- `NEXT_PUBLIC_USE_MOCK` to constaint mock api
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Run on Local
 
-## Learn More
+- Clone the project
 
-To learn more about Next.js, take a look at the following resources:
+  ```bash
+    git clone https://github.com/iffatandriano/ia-techtest-phonebook.git
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Go to the project directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  ```bash
+    cd ia-techtest-phonebook
+  ```
 
-## Deploy on Vercel
+- Install dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```bash
+    npm install or yarn install
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Set up the [environment variables](#environment-variables)
+
+- Start the server
+
+  ```bash
+    npm run dev or yarn dev
+  ```
+
+- Open http://localhost:3000 with your browser to see the result.
+
+## Thank you
