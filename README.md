@@ -2,6 +2,11 @@
 
 Before your clones this project, please make sure you have completely install extension for **Allow CORS** endpoint API can make response and functionality..
 
+- [Allow CORS: Access-Control-Allow-Origin
+](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) to initialize CORS Allow
+
+
+
 ## Features
 
 - :fa-book: Of course, you can **create a new phonebook **
